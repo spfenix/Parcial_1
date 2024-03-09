@@ -27,6 +27,18 @@ public class Program
          sueltot = sueldo + totcomi;
         promc = ((vent1 * 0.10) + (vent2 * 0.10) + (vent3 * 0.10)) / 3;
 
+        if ((vent1 > vent2) && (vent2 > vent3)) { 
+        
+          Console.WriteLine("La mayor comision fue de la primera venta")
+        }
+      
+
+        
+
+
+
+
+
 
 
     }
