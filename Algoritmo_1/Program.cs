@@ -28,9 +28,9 @@ public class Program
         sueltot = sueldo + totcomi;
         promc = ((vent1 * 0.10) + (vent2 * 0.10) + (vent3 * 0.10)) / 3;
 
-        Console.WriteLine("El total de comisiones fue de: ", +  totcomi);
-        Console.WriteLine("el sueldo total mas comisiones fue de: ", +sueltot);
-        Console.WriteLine("El promedio de comisiones fue de: ", +promc);
+        Console.WriteLine("El total de comisiones fue de: " +  totcomi);
+        Console.WriteLine("el sueldo total mas comisiones fue de: " + sueltot);
+        Console.WriteLine("El promedio de comisiones fue de: "  +promc);
 
 
         if (vent1 + vent2 + vent3 > 1000000) { Console.WriteLine("Tiene derecho a un bono por ventas de 100000"); }
