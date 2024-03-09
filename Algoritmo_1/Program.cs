@@ -11,7 +11,7 @@ public class Program
        // ¿Cuál fue la venta que le generó la mayor comisión?
        //¿Cuál fue el promedio de las comisiones que recibió por cada venta?
         //Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El objetivo es sumar en las 3 ventas como mínimo $1.000.000 en ventas. Mostrar un mensaje donde indique si ganó o no el beneficio
-        double sueldo, totcomi, vent1, vent2, vent3, sueltot, promc, benf;
+        double sueldo, totcomi, vent1, vent2, vent3, sueltot, promc;
         Console.Write("Por favor digite el sueldo base: ");
         sueldo = double.Parse(Console.ReadLine());
 
@@ -27,6 +27,11 @@ public class Program
         totcomi = (vent1 * 0.10) + (vent2 * 0.10) + (vent3 * 0.10);
         sueltot = sueldo + totcomi;
         promc = ((vent1 * 0.10) + (vent2 * 0.10) + (vent3 * 0.10)) / 3;
+
+        Console.WriteLine("El total de comisiones fue de: ", +  totcomi);
+        Console.WriteLine("el sueldo total mas comisiones fue de: ", +sueltot);
+        Console.WriteLine("El promedio de comisiones fue de: ", +promc);
+
 
         if (vent1 + vent2 + vent3 > 1000000) { Console.WriteLine("Tiene derecho a un bono por ventas de 100000"); }
 
