@@ -33,8 +33,10 @@ public class Program
         Console.WriteLine("El promedio de comisiones fue de: "  +promc);
 
 
-        if (vent1 + vent2 + vent3 > 1000000) { Console.WriteLine("Tiene derecho a un bono por ventas de 100000"); }
-
+        if (vent1 + vent2 + vent3 > 1000000) { Console.WriteLine("Tiene derecho a un bono por ventas de 100000"); 
+        
+        }
+        else { Console.WriteLine("No tiene derecho a un bono por ventas"); }
 
         if ((vent1 > vent2) && (vent2 > vent3)) {
 
