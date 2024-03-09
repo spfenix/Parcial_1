@@ -28,6 +28,9 @@ public class Program
         sueltot = sueldo + totcomi;
         promc = ((vent1 * 0.10) + (vent2 * 0.10) + (vent3 * 0.10)) / 3;
 
+        if (vent1 + vent2 + vent3 > 1000000) { Console.WriteLine("Tiene derecho a un bono por ventas de 100000"); }
+
+
         if ((vent1 > vent2) && (vent2 > vent3)) {
 
             Console.WriteLine("La mayor comision fue de la primera venta"); 
@@ -46,7 +49,7 @@ public class Program
                if ((vent3 > vent2) && (vent2 > vent1)) { Console.WriteLine("La mayor comision fue de la tercera venta"); }
     }
 
-
+       
 
 }
              
